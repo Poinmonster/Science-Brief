@@ -1,15 +1,12 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    }
-  ]
+  "version": 2
 }
+```
+
+5. Click **"Commit changes"** (green button)
+
+Vercel should auto-detect the function without explicit configuration. It will automatically redeploy.
+
+Wait about 60 seconds, then try again:
+```
+https://owen-science-brief.vercel.app/api/feeds
